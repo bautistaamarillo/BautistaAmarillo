@@ -1,0 +1,3 @@
+crear un boton de resultado que cuando le demos click a enviar, nos de el resultado en esa casilla
+
+posible uso de innerhtml
