@@ -1,0 +1,50 @@
+<!-- Consigna:
+    
+    hacer un formulario donde avamos a pedirle nombre,
+ apellido ,dni fecha de nacimiento, genero, 
+ en el sexo varon y mujer debe ser un diario button,
+ que pueda elegir los colores: verde amarillo azul o rojo 
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action= "formulario.php" method="post" name="formulario1">
+        Apellido: <input type="text" name="apellido"/> <br>
+        Nombre: <input type="text" name="nombre"/> <br>
+        DNI: <input type="number" name="documento"/> <br>
+        Fecha Nacimiento: <input type="date" name="fechanacimiento"/> <br>
+        <br>
+        Sexo: <br>
+        Masculino: <input type="radio" placeholder="Male" name="gender"  value="Hombre"><br>
+        Femenino:    <input type="radio" placeholder="Female" name="gender"  value="Mujer"><br>
+        <p>
+        
+        Colores:<br>
+
+        Verde:    <input type="checkbox" value="Verde" name="color[]"/><br>
+        Amarillo: <input type="checkbox" value="Amarillo" name="color[]"/> <br>
+        Azul: <input type="checkbox" value="Azul" name="color[]"/> <br>
+        Rojo: <input type="checkbox" value="Rojo" name="color[]"/> <br>
+
+        <p>
+      
+
+
+       <div style="text-align:center;" >  <input type="submit" name="enviarboton" value="Enviar" > </div>
+      
+
+
+    </form>
+
+
+
+    
+</body>
+</html>
