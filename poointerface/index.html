@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="functions.js"> </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action= "Main.php" method="post" name="datosempleados">
+        Nombre: <input type="text" name="nombre"/> <br>
+        Apellido: <input type="text" name="apellido"/> <br>
+        Edad: <input type="number" name="edad"/> <br>
+        Salario: <input type="number" name="salario"/> <br>
+
+        Tipo de empleado: <Select name="tipoempleados" onchange="tipoempleado(this.value)"> 
+            <option value="nullvalue" selected > </option>   
+            <option value="repartidor" > Repartidor</option>   
+            <option value="comercial"> Comercial</option>
+        </Select>
+        <div id="mensaje_tipoempleado"></div>
+        <div style="text-align:center;" >  <input type="submit" name="enviarboton" value="Enviar" > </div>
+
+    </form>
+    
+</body>
+</html>
